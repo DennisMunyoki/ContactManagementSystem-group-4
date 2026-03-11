@@ -1,0 +1,1 @@
+This folder contains system screenshots for the Contact Management System project
