@@ -4,34 +4,35 @@
 
                                                   CONTACT MANAGEMENT SYSTEM
 
-*GROUP MEMBERS:
+GROUP MEMBERS:
 
-*WAMBUGU ANGELA WANJIKU
+WAMBUGU ANGELA WANJIKU
 
-*OKUNGU MERCY AKOTH
+OKUNGU MERCY AKOTH
 
-*OBIERO WILLIS OTEMA
+OBIERO WILLIS OTEMA
 
-*MUURU BRIDGET GATWIRI
+MUURU BRIDGET GATWIRI
 
-*MUNYOKI DENNIS NGULA
+MUNYOKI DENNIS NGULA
 
-*MBULA JOSHUA KIEMA
+MBULA JOSHUA KIEMA
 
-*KOSAR  ZAKARIA ABDI
+KOSAR  ZAKARIA ABDI
 
-*KANYIRI MAXWELL MUNGAI
+KANYIRI MAXWELL MUNGAI
 
-*GACHIRA  OWEN MBUGUA
+GACHIRA  OWEN MBUGUA
 
-*CIIRA PETER NJOROGE
+CIIRA PETER NJOROGE
 
 
                                  
                                  Contact Management System
                                  
 Project Overview
-*The Contact Management System is a desktop application built with Java Swing and MySQL that allows users to securely store, organize, and manage their personal and business contacts. The application features user authentication, a modern graphical user interface, and full CRUD (Create, Read, Update, Delete) operations for contact management.
+
+The Contact Management System is a desktop application built with Java Swing and MySQL that allows users to securely store, organize, and manage their personal and business contacts. The application features user authentication, a modern graphical user interface, and full CRUD (Create, Read, Update, Delete) operations for contact management.
 
   
 ################################  Features  ###############################  
@@ -67,11 +68,17 @@ User Interface
 Technology	                   Purpose
 
 *Java JDK 25	                Core programming language
+
 *Java Swing	                Graphical User Interface (GUI) framework
+
 *MySQL     	                Database for persistent data storage
+
 *JDBC	                      Java Database Connectivity for MySQL communication
+
 *Maven                      	Build tool and dependency management
+
 *NetBeans IDE	              Development environment
+
 MySQL Connector/J	          JDBC driver for MySQL
 
 
@@ -97,16 +104,17 @@ Recommended Requirements
 
 Step 1: Create Database
 
-*CREATE DATABASE contactdb;
-*USE contactdb;
+CREATE DATABASE contactdb;
+
+USE contactdb;
 
 Step 2: Create Tables
 
-*You can manually create Tables:
+You can manually create Tables:
 
-*CREATE TABLE users 
+CREATE TABLE users 
 
-*(
+(
     id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
@@ -118,7 +126,7 @@ Step 2: Create Tables
 
 *CREATE TABLE contacts 
 
-*(
+(
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     phone VARCHAR(20) NOT NULL,
@@ -133,6 +141,7 @@ Step 3: Update Database Credentials
 *In DatabaseConnection.java, update the following lines with your MySQL credentials:
 
 *private static final String USERNAME = "root"; // Change to your MySQL username
+
 *private static final String PASSWORD = ""; // Change to your MySQL password
 
 
@@ -140,21 +149,24 @@ Step 3: Update Database Credentials
 
 1. pom.xml
    
-*Purpose: Maven configuration file that manages dependencies and build settings
+Purpose: Maven configuration file that manages dependencies and build settings
+
   *Declares MySQL Connector dependency
   *Sets Java version to JDK 25
   *Defines the main class for execution
 
 3. ContactManagementSystem.java
    
-*Purpose: Entry point of the application.
+Purpose: Entry point of the application.
+
 *	Sets system look and feel
 *	Initializes database tables
 *	Launches the login window
 
 3. DatabaseConnection.java
    
-*Purpose: Handles all database communication.
+Purpose: Handles all database communication.
+
 *	Stores database credentials
 *	Establishes MySQL connections
 *	Creates database tables if they don't exist
@@ -162,7 +174,8 @@ Step 3: Update Database Credentials
 
 4. ModernLoginRegister.java
    
-*Purpose: Manages user authentication.
+Purpose: Manages user authentication.
+
 *Creates login and registration UI
 *Handles user login validation
 *	Processes new user registration
@@ -171,7 +184,8 @@ Step 3: Update Database Credentials
 
 5. ModernContactManagementGUI.java
    
-*Purpose: Main contact management interface.
+Purpose: Main contact management interface.
+
 *	Displays user's contacts in a table
 *	Provides Add, Edit, Delete, Search, and Refresh functions
 *	Handles all CRUD operations with the database
