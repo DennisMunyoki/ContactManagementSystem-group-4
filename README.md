@@ -24,7 +24,7 @@ Project Overview
 - The Contact Management System is a desktop application built with Java Swing and MySQL that allows users to securely store, organize, and manage their personal and business contacts. The application features user authentication, a modern graphical user interface, and full CRUD (Create, Read, Update, Delete) operations for contact management.
 - 
   
-################################    Features  ##################
+################################  Features  
 
 User Management
 
