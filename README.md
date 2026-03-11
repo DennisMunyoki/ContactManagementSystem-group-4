@@ -22,7 +22,7 @@ GROUP MEMBERS:
                                  
 Project Overview
 *The Contact Management System is a desktop application built with Java Swing and MySQL that allows users to securely store, organize, and manage their personal and business contacts. The application features user authentication, a modern graphical user interface, and full CRUD (Create, Read, Update, Delete) operations for contact management.
-- 
+
   
 ################################  Features  ###############################  
 
@@ -86,10 +86,12 @@ Recommended Requirements
 ####################### Database Setup #####################
 
 Step 1: Create Database
+
 *CREATE DATABASE contactdb;
 *USE contactdb;
 
 Step 2: Create Tables
+
 *You can manually create Tables:
 *CREATE TABLE users (
     *id INT AUTO_INCREMENT PRIMARY KEY,
@@ -101,17 +103,19 @@ Step 2: Create Tables
     *created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-*CREATE TABLE contacts (
-    *id INT AUTO_INCREMENT PRIMARY KEY,
-    *name VARCHAR(100) NOT NULL,
-    *phone VARCHAR(20) NOT NULL,
-    *email VARCHAR(100) NOT NULL,
-    *user_id INT,
-    *FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+*CREATE TABLE contacts 
+*(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    user_id INT,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
 
 Step 3: Update Database Credentials
+
 *In DatabaseConnection.java, update the following lines with your MySQL credentials:
 
 *private static final String USERNAME = "root"; // Change to your MySQL username
@@ -121,18 +125,21 @@ Step 3: Update Database Credentials
 ##################  File Descriptions   ################
 
 1. pom.xml
-*Purpose: Maven configuration file that manages dependencies and build settings.
+   
+*Purpose: Maven configuration file that manages dependencies and build settings
   *Declares MySQL Connector dependency
   *Sets Java version to JDK 25
   *Defines the main class for execution
 
-2. ContactManagementSystem.java
+3. ContactManagementSystem.java
+   
 *Purpose: Entry point of the application.
 *	Sets system look and feel
 *	Initializes database tables
 *	Launches the login window
 
 3. DatabaseConnection.java
+   
 *Purpose: Handles all database communication.
 *	Stores database credentials
 *	Establishes MySQL connections
@@ -140,6 +147,7 @@ Step 3: Update Database Credentials
 *	Provides connection objects to other classes
 
 4. ModernLoginRegister.java
+   
 *Purpose: Manages user authentication.
 *Creates login and registration UI
 *Handles user login validation
@@ -148,6 +156,7 @@ Step 3: Update Database Credentials
 *Opens main contact window after successful login
 
 5. ModernContactManagementGUI.java
+   
 *Purpose: Main contact management interface.
 *	Displays user's contacts in a table
 *	Provides Add, Edit, Delete, Search, and Refresh functions
@@ -328,11 +337,11 @@ Issue 5: Application doesn't start
 
            Error Message	Likely Cause	Solution
            
-*"Please fill all fields!"	   -   Empty input during registration	Fill all form fields
-*"Passwords do not match!"    -	Password confirmation mismatch	Retype password correctly
-*"Username already exists!"	  -  Duplicate username	Choose different username
-*"Invalid username or password!"  -	Wrong credentials	Check username/password
-*"Error adding contact"	    -  Database connection issue	Check MySQL connection
+*"Please fill all fields!"	   * Empty input during registration	Fill all form fields
+*"Passwords do not match!"      *	Password confirmation mismatch	Retype password correctly
+*"Username already exists!"	  * Duplicate username	Choose different username
+*"Invalid username or password!"  *	Wrong credentials	Check username/password
+*"Error adding contact"	    * Database connection issue	Check MySQL connection
 
 
 ###############  Future Enhancements  #################
