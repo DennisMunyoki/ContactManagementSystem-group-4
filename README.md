@@ -5,16 +5,16 @@ GROUP 4
 CONTACT MANAGEMENT SYSTEM
 
 GROUP MEMBERS:
-WAMBUGU ANGELA WANJIKU
-OKUNGU MERCY AKOTH
-OBIERO WILLIS OTEMA
-MUURU BRIDGET GATWIRI
-MUNYOKI DENNIS NGULA
-MBULA JOSHUA KIEMA
-KOSAR  ZAKARIA ABDI
-KANYIRI MAXWELL MUNGAI
-GACHIRA  OWEN MBUGUA
-CIIRA PETER NJOROGE
+-WAMBUGU ANGELA WANJIKU
+-OKUNGU MERCY AKOTH
+-OBIERO WILLIS OTEMA
+-MUURU BRIDGET GATWIRI
+-MUNYOKI DENNIS NGULA
+-MBULA JOSHUA KIEMA
+-KOSAR  ZAKARIA ABDI
+-KANYIRI MAXWELL MUNGAI
+-GACHIRA  OWEN MBUGUA
+-CIIRA PETER NJOROGE
 
 
                                  
@@ -27,6 +27,7 @@ Project Overview
 ################################    Features  ##################
 
 User Management
+
 	 User Registration - Create new account with first name, last name, username, and password
 	User Login - Secure authentication to access personal contacts
 	 Password Validation - Password confirmation during registration
