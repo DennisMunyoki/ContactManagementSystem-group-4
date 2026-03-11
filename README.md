@@ -65,21 +65,21 @@ User Interface
 
 ########################### Technologies Used ###################
 
-Technology	                   Purpose
+Technology	         &          Purpose
 
-*Java JDK 25	                Core programming language
+Java JDK 25	        -        Core programming language
 
-*Java Swing	                Graphical User Interface (GUI) framework
+Java Swing	        -        Graphical User Interface (GUI) framework
 
-*MySQL     	                Database for persistent data storage
+MySQL     	     -           Database for persistent data storage
 
-*JDBC	                      Java Database Connectivity for MySQL communication
+JDBC	             -         Java Database Connectivity for MySQL communication
 
-*Maven                      	Build tool and dependency management
+Maven             -         	Build tool and dependency management
 
-*NetBeans IDE	              Development environment
+NetBeans IDE	      -        Development environment
 
-MySQL Connector/J	          JDBC driver for MySQL
+MySQL Connector/J	    -      JDBC driver for MySQL
 
 
 ###########################  System Requirements #####################
@@ -155,7 +155,7 @@ Purpose: Maven configuration file that manages dependencies and build settings
   *Sets Java version to JDK 25
   *Defines the main class for execution
 
-3. ContactManagementSystem.java
+2. ContactManagementSystem.java
    
 Purpose: Entry point of the application.
 
@@ -365,11 +365,15 @@ Issue 5: Application doesn't start
 
            Error Message	Likely Cause	Solution
            
-*"Please fill all fields!"	   * Empty input during registration	Fill all form fields
-*"Passwords do not match!"      *	Password confirmation mismatch	Retype password correctly
-*"Username already exists!"	  * Duplicate username	Choose different username
-*"Invalid username or password!"  *	Wrong credentials	Check username/password
-*"Error adding contact"	    * Database connection issue	Check MySQL connection
+"Please fill all fields!"	   -  Empty input during registration	Fill all form fields
+
+"Passwords do not match!"      -	Password confirmation mismatch	Retype password correctly
+
+"Username already exists!"	  - Duplicate username	Choose different username
+
+"Invalid username or password!"  - Wrong credentials	Check username/password
+
+"Error adding contact"	    - Database connection issue	Check MySQL connection
 
 
 ###############  Future Enhancements  #################
